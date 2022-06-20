@@ -10,6 +10,7 @@ bot = commands.Bot(command_prefix = ".", case_insensitive = True)
 
 #loading the cogs
 for filename in os.listdir('./cogs'):
-    bot.load_extension(f'cogs.{filename[:-3]}')
+    if(filename.endswith(".py")):
+        bot.load_extension(f'cogs.{filename[:-3]}')
     
 bot.run(TOKEN)
