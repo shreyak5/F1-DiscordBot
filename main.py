@@ -1,8 +1,10 @@
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
+from os import getenv
+load_dotenv()
 
-TOKEN = "OTg4MzkyOTYzNDM0NTA4MzE4.GABQuY.9dZ6BnlH64uOJ6DJ1t_k9i6Izy5qzN9CLRvyYg"
-
+TOKEN = getenv('TOKEN')
 bot = commands.Bot(command_prefix = ".", case_insensitive = True)
 
 @bot.event
