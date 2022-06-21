@@ -29,5 +29,18 @@ def team_standings():
     );
     return output
 
+def race_results():
+    url = "https://www.formula1.com/en/results.html"
+    data = pd.read_html(url)[0]
+    data = data[['Grand Prix', 'Winner']]
+    output = table2ascii(
+        header = ["GP", "Winner"],
+        body = data.values.tolist(),
+        first_col_heading = True,
+        alignments = [Alignment.LEFT]*2
+    );
+    return output
+    
+
 
 

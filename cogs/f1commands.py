@@ -27,6 +27,10 @@ class F1_Commands(commands.Cog):
     @commands.command()
     async def teams(self, ctx):
         await ctx.send(f'```{standings.team_standings()}```')
+
+    @commands.command()
+    async def raceresults(self, ctx):
+        await ctx.send(f'```{standings.race_results()}```')
         
     
 def setup(bot):
