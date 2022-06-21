@@ -1,0 +1,50 @@
+facts =[
+    "F1 racers lose over 3 liters of body water during 1 race.",
+    "Formula 1 car tires lose 0.5kgs during a race.",
+    "Even though they are extremely light, F1 Helmets are the toughest in the world.",
+    "Carbon fiber is the main material that's used to make Formula 1 helmets because of its robustness.",
+    "Formula 1 drivers lose up to 4 KGs during a race because of the unbearable temperatures in the cockpit, which can reach up to 50 degrees Celsius.",
+    "The weight of an F1 car must be over 728kg (without fuel).",
+    "The lifespan of an F1 engine is less than 5 races.",
+    "F1 cars rev at 15,000 RPM. A normal vehicle can achieve up to 6,000 RPM, while a Formula 1 race car can achieve twice as much.",
+    "There have been a total of 46 recorded deaths as a result of Formula 1 car accidents. The oldest driver to have died was 50-year-old Chet Miller, while the youngest was Ricardo Rodriguez, who was 20.",
+    "The highest top speed ever achieved in an F1 car on an F1 circuit was 372.6kmph which was set by Juan Pablo Montoya.",
+    "The oldest driver to win a title was Juan Manuel Fangio (the elder), who collected the final of his five world titles in 1957 at the age of 47.",
+    "The oldest F1 race winner was Luigi Fagioli, who won the 1951 French Grand Prix for Alfa Romeo, aged 53 years and 22 days.",
+    "Building an F1 car can cost hundreds of millions. Out of 80000 elements required to build it, only the basic ones cost around 6.8 million!",
+    "An F1 car can reach up to 360 kmph during a race.",
+    "Despite the massive amount of heat in the cockpit, an f1 driver has to wear two suits. One protects him from injuries, and one protects him from the heat.",
+    "F1 is called 'formula' one because drivers have to follow around 500 rules and regulations (hence - formulas) before participating in a race.",
+    "An F1 car can (theoretically) drive upside down for two seconds, but nobody has ever done it till date!",
+    "Lella Lombardi, the most successful female f1 driver of all time, has qualified for 12 races out of the 17 she participated in. She also scored half a point in the 1975 Spanish GP and had a three-year racing career.",
+    "An F1 engine and its gearbox need to be preheated before starting, or they won't turn on. That's why they are not used in a normal car, because of the long preheating time required to start it.",
+    "In the history of F1 racing, no one with the surname 'Hill' has ever failed in winning a world title. For example, Graham Hill, Darion Hill, and Phil Hill.",
+    "Racing tires last only 90-120 km as compared to regular tires which last up to 100000 km.",
+    "Some of the best F1 pit crews can refuel and change the tires in just three seconds.",
+    "F1 brake discs are made up from a unique and durable form of carbon fibre that can heat up to around 1200 degree Celsius.",
+    "While turning a car around the corners and applying brakes, a driver experiences a load of 5G, which is five times his own bodyweight.",
+    "An F1 car can (theoretically) accelerate from 0 to 100 kmph in just one second. However, the practical time to do so is two seconds!",
+    "F1 helmets are so strong and durable that they can last temperature of 800-degree Celsius for 45 seconds.",
+    "Every race, the driver with the fastest lap during the race gets an extra point.",
+    "While the first auto races took place well before WWII, Formula 1 didn't officially begin until 1946.",
+    "Though the first race took place in 1946, the first world championship wouldn't be until 1950. During the championship race on May 13th, 14 teams and several independent drivers took to the track, with Giuseppe Farina taking home the victory.",
+    "Formula 1 teams can have up To 600 Members",
+    "F1 steering wheels can have upto 25 buttons on them. Each button and switch controls every aspect of the car, allowing the driver ultimate control.",
+    "The last time McLaren won the world championship was in 2008, and Lewis Hamilton was behind the wheel.",
+    "Recording 365,000 spectators, the 2021 British Grand Prix broke attendance records.",
+    "Over 400 million people watch Formula One on television.",
+    "Today Formula One, along with the Olympic Games and the FIFA World Cup, is one of the most publicised events.",
+    "Netflix’s Formula One documentary series, 'Formula 1 : Drive to Survive', boosted viewership numbers in the US.",
+    "Winning an amazing 103 races during his career, Hamilton is the first driver to break triple figures in F1 history. He is also the first driver to reach triple-digit pole positions, getting his 100th pole position in 2021 at the Spanish Grand Prix.",
+    "According to F1 statistics as of January 2021, Schumacher (fastest lap in 77 races) is followed by Lewis Hamilton (fastest lap in 53 races) and Kimi Raikkonen (fastest lap in 46 races). Alain Prost (41) and Sebastian Vettel (38) complete the top five drivers with the highest number of fastest laps.",
+    "The weather can have a serious impact on Formula car races.",
+    "There were only seven Grand Prix races in the first season of F1.",
+    "Comprising 44 laps, the Belgian Grand Prix has the longest circuit of all F1 race tracks (7 km).",
+    "Red Bull managed to pull off the fastest pit stop in the history of the sport of just 1.82 seconds with Max Verstappen during the Brazilian Grand Prix."
+]
+
+# Sources:
+# - https://sportsmatik.com/sports-corner/sports-know-how/formula-1/fun-facts
+# - https://www.chaseyoursport.com/Formula-1/11-lesser-known-facts-about-the-Formula-1/2252
+# - https://cometoplay.co.uk/interesting-facts/formula-1-facts/
+
