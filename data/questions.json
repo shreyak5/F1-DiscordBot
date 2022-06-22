@@ -1,0 +1,299 @@
+[
+  {
+    "question": "Lewis Hamilton won the first F1 world championship title when he raced for which team?",
+    "options": [
+      "A. McLaren",
+      "B. Mercedes",
+      "C. Red Bull\n"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "The title \u201cGrand Prix\u201d was first used for a motor race in which country?",
+    "options": [
+      "A. France",
+      "B. Germany",
+      "C. The United States\n"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "What is the nickname of Ferrari \u2013 one of the most successful racing teams in F1 history?",
+    "options": [
+      "A. The Dancing Donkey",
+      "B. The Prancing Horse",
+      "C. The Prancing Pony\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Juan Manuel Fangio, one of the greatest F1 drivers, took his last world championship title in which year?",
+    "options": [
+      "A. 1956",
+      "B. 1957",
+      "C. 1958\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Ford provided engines to F1 for many years before forming its own team in 2000 under the name of which subsidiary marques?",
+    "options": [
+      "A. Mazda",
+      "B. Volvo",
+      "C. Jaguar\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "For what country did Emerson Fittipaldi and Wilson Fittipaldi compete and win two world titles?",
+    "options": [
+      "A. Mexico",
+      "B. Argentina",
+      "C. Brazil\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which driver won the first ever F1 world championship title?",
+    "options": [
+      "A. Juan Manuel Fangio",
+      "B. Alberto Ascari",
+      "C. Giuseppe Farina\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which of these Italian racers became the first woman to enter a professional F1 race at the 1958 Monaco Grand Prix?",
+    "options": [
+      "A. Silvia Farina Elia",
+      "B. Clotilde Fasolis",
+      "C. Maria Teresa de Filippis\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which circuit held the first race of the French Grand Prix in 1950?",
+    "options": [
+      "A. Reims",
+      "B. Paul Ricard",
+      "C. Magny Cours\n"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "For which country the Haas team compete?",
+    "options": [
+      "A. Italia",
+      "B. The United States",
+      "C. Germany\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which major car manufacturer was successful at supplying engines for McLaren between 1988 and 1992, but failed when the two renewed their cooperation in 2015?",
+    "options": [
+      "A. Hyundai",
+      "B. Honda",
+      "C. Holden\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which of these Hills racers was not an F1 world champion in the 20th century?",
+    "options": [
+      "A. Jimmy Hill",
+      "B. Graham Hill",
+      "C. Phil Hill\n"
+    ],
+    "answer": "J"
+  },
+  {
+    "question": "In 2017, which racer became the first New Zealander to participate in an F1 tournament in more than 30 years?",
+    "options": [
+      "A. Bill Holland",
+      "B. Brendon Hartley",
+      "C. Brian Henton\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "The Hungarian Grand Prix became a part of the F1 world championship during which decade?",
+    "options": [
+      "A. 1940s",
+      "B. 1960s",
+      "C. 1980s\n"
+    ],
+    "answer": "1"
+  },
+  {
+    "question": "HSBC was the title sponsor for which F1 team from 1997 to 1999?",
+    "options": [
+      "A. Jaguar",
+      "B. Stewart",
+      "C. Williams\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which F1 world champion passed away after an F2 accident in 1968 in Germany?",
+    "options": [
+      "A. Jack Brabham",
+      "B. Jochen Rindt",
+      "C. Jim Clark\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "What must a racer do when he or she sees a blue flag during a practice session or race?",
+    "options": [
+      "A. Slow down and allow the quicker vehicle behind them to pass",
+      "B. Pull over to the track\u2019s side and stop",
+      "C. Slow down and block all vehicles behind them\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "When a red and yellow striped flag is waved, the stripes will run in what direction?",
+    "options": [
+      "A. Diagonally from left to right",
+      "B. Diagonally from right to left",
+      "C. Vertically\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "In 2005, the regulations changed and stated that teams weren\u2019t allowed to change \u2026 during a Grand Prix.",
+    "options": [
+      "A. Rear wings",
+      "B. Tyres",
+      "C. Front wings\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "In 2007, which two racers were disqualified in the Canadian Grand Prix for neglecting the red lights in the pit lane?",
+    "options": [
+      "A. Nico Rosberg and Fernando Alonso",
+      "B. Giancarlo Fisichella and Felipe Massa",
+      "C. Fernando Alonso and Felipe Massa\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "Which F1 constructor enters the most races without a win?",
+    "options": [
+      "A. Arrows",
+      "B. Tyrrell",
+      "C. Matra\n"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "Who is the only woman to get points in an F1 World Championship race?",
+    "options": [
+      "A. Desire Wilson",
+      "B. Lella Lombardi",
+      "C. Susie Wolff\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What was the last race that awarded half points after the race had been stopped?",
+    "options": [
+      "A. Japan 2014",
+      "B. Korea 2012",
+      "C. Malaysia 2009\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "In 2004, which of the following F1 features were banned in 2004?",
+    "options": [
+      "A. Automatic gearbox",
+      "B. Launch control",
+      "C. Both of them\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "If a few drivers set identical lap times, then who would get the priority?",
+    "options": [
+      "A. The driver with a shorter surname",
+      "B. The driver with the most wins",
+      "C. The driver who set first\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "During his F1 career, Luca Badoer had competed in how many races?",
+    "options": [
+      "A. 46",
+      "B. 56",
+      "C. 66\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "What does a red flag mean in the race?",
+    "options": [
+      "A. The race is stopped",
+      "B. There is oil spilled on the track",
+      "C. There is no red flag in F1\n"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "In F1, which flag signifies that there is one more lap before the race ends?",
+    "options": [
+      "A. The white flag",
+      "B. The orange flag",
+      "C. There is no such flag\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which team have completed in all of the F1 world championships in the 20th century?",
+    "options": [
+      "A. McLaren",
+      "B. Ferrari",
+      "C. Williams\n"
+    ],
+    "answer": "B"
+  },
+  {
+    "question": "When was the last time the Brands Hatch Circuit hosted the British Grand Prix in the 20th century?",
+    "options": [
+      "A. 1962",
+      "B. 1974",
+      "C. 1986\n"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which is the longest circuit in F1 at 25.8 km?",
+    "options": [
+      "A. Pescara",
+      "B. Nurburgring",
+      "C. Dijon\n"
+    ],
+    "answer": "A"
+  },
+  {
+    "question": "How old was Ayrton Senna when he died?",
+    "options": [
+      "A. 32",
+      "B. 33",
+      "C. 34"
+    ],
+    "answer": "C"
+  },
+  {
+    "question": "Which movie was made about Niki Lauda\u2019s racing career?",
+    "options": [
+      "A. Crash",
+      "B. Rush",
+      "C. Champion"
+    ],
+    "answer": "B"
+  }
+]
