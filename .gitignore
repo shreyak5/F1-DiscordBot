@@ -1,6 +1,4 @@
 .env
 images/
 *.txt
-cogs/__pycache__
-webscraping/__pycache__
 __pycache__
