@@ -16,7 +16,7 @@ class Help_Commands(commands.Cog):
 
         help_embed.set_author(name = "Help Command", icon_url = f1_logo)
         help_embed.set_footer(text = "Type '.help <commandName>' for details on a command")
-        help_embed.add_field(name = "General commands", value = "`.help`, `.hello`", inline = False)
+        help_embed.add_field(name = "General commands", value = "`.help`, `.hello`, `.bye`", inline = False)
         help_embed.add_field(name = "F1 commands", value = "`.drivers`, `.teams`, `.racewins`", inline = False)
         help_embed.add_field(name = "Fun commands", value = "`.fact`, `.quiz`", inline = False)
         await ctx.send(embed = help_embed)
@@ -32,6 +32,18 @@ class Help_Commands(commands.Cog):
         embed.set_author(name = "Help Command: hello", icon_url = f1_logo)
         embed.add_field(name = "Description", value = "Says hello to the user.", inline = False)
         embed.add_field(name = "Syntax", value = "`.hello`", inline = False)
+        await ctx.send(embed = embed)
+
+    @help.command(pass_context = True)
+    async def bye(self, ctx):
+        embed = discord.Embed(
+            colour = discord.Color.dark_red()
+        )
+        f1_logo = "https://i.ibb.co/QXL69Nq/logo.png"
+
+        embed.set_author(name = "Help Command: bye", icon_url = f1_logo)
+        embed.add_field(name = "Description", value = "Says bye to the user.", inline = False)
+        embed.add_field(name = "Syntax", value = "`.bye`", inline = False)
         await ctx.send(embed = embed)
 
     # F1 commands
