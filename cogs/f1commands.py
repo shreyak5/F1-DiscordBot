@@ -9,17 +9,8 @@ class F1_Commands(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
-    
-    #Events
-    @commands.Cog.listener()
-    async def on_ready(self):
-        print("F1-Bot is ready!")
 
     #Commands
-    @commands.command()
-    async def hello(self, ctx):
-        await ctx.send(f'Hello {str(ctx.author).split("#")[0]}!')
-
     @commands.command()
     async def drivers(self, ctx):
         await ctx.send(f'```{standings.drivers_standings()}```')
