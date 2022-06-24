@@ -11,15 +11,15 @@ class F1_Commands(commands.Cog):
         self.bot = bot
 
     #Commands
-    @commands.command()
+    @commands.command(pass_context = True)
     async def drivers(self, ctx):
         await ctx.send(f'```{standings.drivers_standings()}```')
 
-    @commands.command()
+    @commands.command(pass_context = True)
     async def teams(self, ctx):
         await ctx.send(f'```{standings.team_standings()}```')
 
-    @commands.command()
+    @commands.command(pass_context = True)
     async def racewins(self, ctx):
         await ctx.send(f'```{standings.race_wins()}```')
       

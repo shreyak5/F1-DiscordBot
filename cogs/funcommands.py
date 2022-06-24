@@ -26,13 +26,13 @@ class Fun_Commands(commands.Cog):
         self.first_q = 0;
     
     # fact command
-    @commands.command()
+    @commands.command(pass_context = True)
     async def fact(self, ctx):
         random_fact = random.choice(facts)
         await ctx.send(f"```{random_fact}```")
 
     # quiz command
-    @commands.command()
+    @commands.command(pass_context = True)
     async def quiz(self, ctx, *arg):
         if(len(arg) == 0):
             await self.start_quiz(ctx)
