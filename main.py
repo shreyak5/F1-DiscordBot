@@ -7,6 +7,7 @@ load_dotenv()
 
 TOKEN = getenv('TOKEN')
 bot = commands.Bot(command_prefix = ".", case_insensitive = True)
+bot.remove_command('help')
 
 #loading the cogs
 for filename in os.listdir('./cogs'):
