@@ -21,6 +21,9 @@ class Fun_Commands(commands.Cog):
 
         with open("data\questions.json", "r") as f:
             self.data = json.load(f)
+
+        self.data_size = len(self.data)
+        self.first_q = 0;
     
     # fact command
     @commands.command()
@@ -67,8 +70,12 @@ class Fun_Commands(commands.Cog):
         await ctx.send(f'>>> {quiz_string}') 
         await ctx.send("```Starting quiz..```")
 
+        await self.reset_variables()
         self.quiz_start = True
-        self.questions = random.choices(self.data, k = 5)
+ 
+        for i in range(5):
+            (self.questions).append(self.data[(self.first_q + i) % self.data_size])
+ 
         self.current_question = self.questions[self.question_number]
         await self.display_question(ctx)
     
@@ -81,6 +88,9 @@ class Fun_Commands(commands.Cog):
         optionC = self.current_question['options'][2]
         display_message = f"Question {num}: {question}\n{optionA}\n{optionB}\n{optionC}"
         await ctx.send(f"```{display_message}```")
+
+        # Doesn't show this question in the next round because it's already been displayed
+        self.first_q = (self.first_q + 1) % self.data_size
 
     # Displays the points scored at the end of the quiz
     async def display_points(self, ctx):
@@ -112,13 +122,8 @@ class Fun_Commands(commands.Cog):
     # Ends the quiz and resets all quiz variables to default values
     async def end_quiz(self, ctx):
         await ctx.send(f'```Quiz ended.```')
-
-        self.quiz_start = False
-        self.question_number = 0
-        self.points = 0
-        self.questions = []
-        self.current_question = {}
-
+        await self.reset_variables()
+        
     # Error message for invalid command during quiz
     async def display_error_message(self, ctx):
         error_message = """**Invalid command.** The valid quiz commands are:
@@ -126,6 +131,13 @@ class Fun_Commands(commands.Cog):
             - To answer a question: *.quiz A* *(or B or C)*
             - To quit : *.quiz quit*"""
         await ctx.send(f">>> {error_message}")
+
+    async def reset_variables(self):
+        self.quiz_start = False
+        self.question_number = 0
+        self.points = 0
+        self.questions = []
+        self.current_question = {}
         
 
     
