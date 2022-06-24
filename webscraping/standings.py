@@ -29,7 +29,7 @@ def team_standings():
     );
     return output
 
-def race_results():
+def race_wins():
     url = "https://www.formula1.com/en/results.html"
     data = pd.read_html(url)[0]
     data = data[['Grand Prix', 'Winner']]

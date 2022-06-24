@@ -29,8 +29,8 @@ class F1_Commands(commands.Cog):
         await ctx.send(f'```{standings.team_standings()}```')
 
     @commands.command()
-    async def raceresults(self, ctx):
-        await ctx.send(f'```{standings.race_results()}```')
+    async def racewins(self, ctx):
+        await ctx.send(f'```{standings.race_wins()}```')
       
 def setup(bot):
     bot.add_cog(F1_Commands(bot))
