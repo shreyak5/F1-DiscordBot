@@ -1,0 +1,218 @@
+[
+  {
+    "round": "TESTING",
+    "start-date": "23",
+    "end-date": "25",
+    "title": "FORMULA 1 PRE-SEASON TRACK SESSION 2022",
+    "place": "Spain",
+    "start-month": "Feb",
+    "end-month": "Feb"
+  },
+  {
+    "round": "TESTING",
+    "start-date": "10",
+    "end-date": "12",
+    "title": "FORMULA 1 ARAMCO PRE-SEASON TESTING 2022",
+    "place": "Bahrain",
+    "start-month": "Mar",
+    "end-month": "Mar"
+  },
+  {
+    "round": "ROUND 1",
+    "start-date": "18",
+    "end-date": "20",
+    "title": "FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2022",
+    "place": "Bahrain",
+    "start-month": "Mar",
+    "end-month": "Mar"
+  },
+  {
+    "round": "ROUND 2",
+    "start-date": "25",
+    "end-date": "27",
+    "title": "FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2022",
+    "place": "Saudi Arabia",
+    "start-month": "Mar",
+    "end-month": "Mar"
+  },
+  {
+    "round": "ROUND 3",
+    "start-date": "08",
+    "end-date": "10",
+    "title": "FORMULA 1 HEINEKEN AUSTRALIAN GRAND PRIX 2022",
+    "place": "Australia",
+    "start-month": "Apr",
+    "end-month": "Apr"
+  },
+  {
+    "round": "ROUND 4",
+    "start-date": "22",
+    "end-date": "24",
+    "title": "FORMULA 1 ROLEX GRAN PREMIO DEL MADE IN ITALY E DELL'EMILIA-ROMAGNA 2022",
+    "place": "Italy",
+    "start-month": "Apr",
+    "end-month": "Apr"
+  },
+  {
+    "round": "ROUND 5",
+    "start-date": "06",
+    "end-date": "08",
+    "title": "FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2022",
+    "place": "United States",
+    "start-month": "May",
+    "end-month": "May"
+  },
+  {
+    "round": "ROUND 6",
+    "start-date": "20",
+    "end-date": "22",
+    "title": "FORMULA 1 PIRELLI GRAN PREMIO DE ESPA\u00d1A 2022",
+    "place": "Spain",
+    "start-month": "May",
+    "end-month": "May"
+  },
+  {
+    "round": "ROUND 7",
+    "start-date": "27",
+    "end-date": "29",
+    "title": "FORMULA 1 GRAND PRIX DE MONACO 2022",
+    "place": "Monaco",
+    "start-month": "May",
+    "end-month": "May"
+  },
+  {
+    "round": "ROUND 8",
+    "start-date": "10",
+    "end-date": "12",
+    "title": "FORMULA 1 AZERBAIJAN GRAND PRIX 2022",
+    "place": "Azerbaijan",
+    "start-month": "Jun",
+    "end-month": "Jun"
+  },
+  {
+    "round": "ROUND 9",
+    "start-date": "17",
+    "end-date": "19",
+    "title": "FORMULA 1 AWS GRAND PRIX DU CANADA 2022",
+    "place": "Canada",
+    "start-month": "Jun",
+    "end-month": "Jun"
+  },
+  {
+    "round": "ROUND 10 - UP NEXT",
+    "start-date": "01",
+    "end-date": "03",
+    "title": "FORMULA 1 LENOVO BRITISH GRAND PRIX 2022",
+    "place": "Great Britain",
+    "start-month": "Jul",
+    "end-month": "Jul"
+  },
+  {
+    "round": "ROUND 11",
+    "start-date": "08",
+    "end-date": "10",
+    "title": "FORMULA 1 ROLEX GROSSER PREIS VON \u00d6STERREICH 2022",
+    "place": "Austria",
+    "start-month": "Jul",
+    "end-month": "Jul"
+  },
+  {
+    "round": "ROUND 12",
+    "start-date": "22",
+    "end-date": "24",
+    "title": "FORMULA 1 LENOVO GRAND PRIX DE FRANCE 2022",
+    "place": "France",
+    "start-month": "Jul",
+    "end-month": "Jul"
+  },
+  {
+    "round": "ROUND 13",
+    "start-date": "29",
+    "end-date": "31",
+    "title": "FORMULA 1 ARAMCO MAGYAR NAGYD\u00cdJ 2022",
+    "place": "Hungary",
+    "start-month": "Jul",
+    "end-month": "Jul"
+  },
+  {
+    "round": "ROUND 14",
+    "start-date": "26",
+    "end-date": "28",
+    "title": "FORMULA 1 ROLEX BELGIAN GRAND PRIX 2022",
+    "place": "Belgium",
+    "start-month": "Aug",
+    "end-month": "Aug"
+  },
+  {
+    "round": "ROUND 15",
+    "start-date": "02",
+    "end-date": "04",
+    "title": "FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2022",
+    "place": "Netherlands",
+    "start-month": "Sep",
+    "end-month": "Sep"
+  },
+  {
+    "round": "ROUND 16",
+    "start-date": "09",
+    "end-date": "11",
+    "title": "FORMULA 1 PIRELLI GRAN PREMIO D\u2019ITALIA 2022",
+    "place": "Italy",
+    "start-month": "Sep",
+    "end-month": "Sep"
+  },
+  {
+    "round": "ROUND 17",
+    "start-date": "30",
+    "end-date": "02",
+    "title": "FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2022",
+    "place": "Singapore",
+    "start-month": "Sep",
+    "end-month": "Oct"
+  },
+  {
+    "round": "ROUND 18",
+    "start-date": "07",
+    "end-date": "09",
+    "title": "FORMULA 1 HONDA JAPANESE GRAND PRIX 2022",
+    "place": "Japan",
+    "start-month": "Oct",
+    "end-month": "Oct"
+  },
+  {
+    "round": "ROUND 19",
+    "start-date": "21",
+    "end-date": "23",
+    "title": "FORMULA 1 ARAMCO UNITED STATES GRAND PRIX 2022",
+    "place": "United States",
+    "start-month": "Oct",
+    "end-month": "Oct"
+  },
+  {
+    "round": "ROUND 20",
+    "start-date": "28",
+    "end-date": "30",
+    "title": "FORMULA 1 GRAN PREMIO DE LA CIUDAD DE M\u00c9XICO 2022",
+    "place": "Mexico",
+    "start-month": "Oct",
+    "end-month": "Oct"
+  },
+  {
+    "round": "ROUND 21",
+    "start-date": "11",
+    "end-date": "13",
+    "title": "FORMULA 1 HEINEKEN GRANDE PR\u00caMIO DE S\u00c3O PAULO 2022",
+    "place": "Brazil",
+    "start-month": "Nov",
+    "end-month": "Nov"
+  },
+  {
+    "round": "ROUND 22",
+    "start-date": "18",
+    "end-date": "20",
+    "title": "FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2022",
+    "place": "Abu Dhabi",
+    "start-month": "Nov",
+    "end-month": "Nov"
+  }
+]
