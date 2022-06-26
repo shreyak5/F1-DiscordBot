@@ -28,7 +28,7 @@ facts =[
     "Every race, the driver with the fastest lap during the race gets an extra point.",
     "While the first auto races took place well before WWII, Formula 1 didn't officially begin until 1946.",
     "Though the first race took place in 1946, the first world championship wouldn't be until 1950. During the championship race on May 13th, 14 teams and several independent drivers took to the track, with Giuseppe Farina taking home the victory.",
-    "Formula 1 teams can have up To 600 Members",
+    "Formula 1 teams can have up to 600 Members",
     "F1 steering wheels can have upto 25 buttons on them. Each button and switch controls every aspect of the car, allowing the driver ultimate control.",
     "The last time McLaren won the world championship was in 2008, and Lewis Hamilton was behind the wheel.",
     "Recording 365,000 spectators, the 2021 British Grand Prix broke attendance records.",
