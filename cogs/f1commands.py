@@ -5,7 +5,7 @@ import random
 
 import sys
 sys.path.append("../")
-from webscraping import standings, news
+from webscraping import standings, news, upcoming
 
 class F1_Commands(commands.Cog):
 
@@ -45,6 +45,10 @@ class F1_Commands(commands.Cog):
         news_embed.add_field(name = article["headline"], value = f'Read more:\n{article["link"]}')
         await ctx.send(embed = news_embed)
 
+    @commands.command(pass_context = True)
+    async def nextrace(self, ctx):
+        await ctx.send("```Fetching data...```")
+        await ctx.send(embed = await upcoming.next_race())
     
 def setup(bot):
     bot.add_cog(F1_Commands(bot))
