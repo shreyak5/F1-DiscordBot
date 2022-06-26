@@ -17,7 +17,7 @@ class Help_Commands(commands.Cog):
         help_embed.set_author(name = "Help Command", icon_url = f1_logo)
         help_embed.set_footer(text = "Type '.help <commandName>' for details on a command")
         help_embed.add_field(name = "General commands", value = "`.help`, `.hello`, `.bye`", inline = False)
-        help_embed.add_field(name = "F1 commands", value = "`.drivers`, `.teams`, `.racewins`, `.news`, `.nextrace`", inline = False)
+        help_embed.add_field(name = "F1 commands", value = "`.drivers`, `.teams`, `.racewins`, `.news`, `.nextrace`, `.schedule`", inline = False)
         help_embed.add_field(name = "Fun commands", value = "`.fact`, `.quiz`", inline = False)
         await ctx.send(embed = help_embed)
 
@@ -105,6 +105,18 @@ class Help_Commands(commands.Cog):
         embed.set_author(name = "Help Command: nextrace", icon_url = f1_logo)
         embed.add_field(name = "Description", value = "Displays the full schedule of the next race.", inline = False)
         embed.add_field(name = "Syntax", value = "`.nextrace`", inline = False)
+        await ctx.send(embed = embed)
+
+    @help.command(pass_context = True)
+    async def schedule(self, ctx):
+        embed = discord.Embed(
+            colour = discord.Color.dark_red()
+        )
+        f1_logo = "https://i.ibb.co/QXL69Nq/logo.png"
+
+        embed.set_author(name = "Help Command: schedule", icon_url = f1_logo)
+        embed.add_field(name = "Description", value = "Displays the schedule of the upcoming races this season.", inline = False)
+        embed.add_field(name = "Syntax", value = "`.schedule`", inline = False)
         await ctx.send(embed = embed)
 
     # Fun commands
