@@ -31,7 +31,7 @@ class F1_Commands(commands.Cog):
 
     @commands.command(pass_context = True)
     async def news(self, ctx):
-        self.update_hour, self.newslist = await news.latest_news(ctx, self.update_hour, self.newslist)
+        self.update_hour, self.newslist, message = await news.latest_news(ctx, self.update_hour, self.newslist)
         # make this random
         article = random.choice(self.newslist)
         self.newslist.remove(article)
@@ -43,12 +43,16 @@ class F1_Commands(commands.Cog):
         f1_logo = "https://i.ibb.co/QXL69Nq/logo.png"
         news_embed.set_author(name = "Latest F1 news", icon_url = f1_logo)
         news_embed.add_field(name = article["headline"], value = f'Read more:\n{article["link"]}')
-        await ctx.send(embed = news_embed)
+
+        if(message == None):
+            await ctx.send(embed = news_embed)
+        else:
+            await message.edit(content = "", embed = news_embed)
 
     @commands.command(pass_context = True)
     async def nextrace(self, ctx):
-        await ctx.send("```Fetching data...```")
-        await ctx.send(embed = await upcoming.next_race())
+        message = await ctx.send("```Fetching data...```")
+        await message.edit(content = "", embed = await upcoming.next_race())
     
 def setup(bot):
     bot.add_cog(F1_Commands(bot))

@@ -19,6 +19,8 @@ async def update_list(ctx):
         time = article.find("div div time", first = True)
         if(time ==  None):
             continue
+        if(h3 == None):
+            continue
         # filtering out old headlines
         if("days ago" in time.text):
             continue
@@ -26,21 +28,21 @@ async def update_list(ctx):
         empty["link"] = list(h3.absolute_links)[0]
         data.append(empty)
     
-    print(len(data))
     return data
 
 async def latest_news(ctx, update_hour, newslist):
     current_hour = datetime.datetime.now().hour
-    
+
+    message = None
     if(current_hour == update_hour):
         update_hour = (current_hour + 2) % 24
         newslist.clear()
-        await ctx.send("```Fetching latest F1 news..```")
+        message = await ctx.send("```Fetching latest F1 news..```")
         newslist = await update_list(ctx)
     
     if(len(newslist) == 0):
-        await ctx.send("```Fetching latest F1 news..```")
-        newslist = await update_list(ctx)
         update_hour = (current_hour + 2) % 24
-
-    return update_hour, newslist
+        message = await ctx.send("```Fetching latest F1 news..```")
+        newslist = await update_list(ctx)
+        
+    return update_hour, newslist, message
