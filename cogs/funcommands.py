@@ -29,7 +29,12 @@ class Fun_Commands(commands.Cog):
     @commands.command(pass_context = True)
     async def fact(self, ctx):
         random_fact = random.choice(facts)
-        await ctx.send(f"```{random_fact}```")
+        fact_embed = discord.Embed(
+            color = discord.Color.dark_red()
+        )
+        
+        fact_embed.add_field(name = "Did you know?", value = random_fact)
+        await ctx.send(embed = fact_embed)
 
     # quiz command
     @commands.command(pass_context = True)
@@ -38,9 +43,11 @@ class Fun_Commands(commands.Cog):
             await self.start_quiz(ctx)
 
         elif((len(arg) != 0) and (self.quiz_start == False)):
-            error_message = "**Invalid command:** There is no quiz going on.\n"
-            error_message += "    - Use the command *.quiz* to start a quiz!"
-            await ctx.send(f'>>> {error_message}')
+            error_embed = discord.Embed(
+                colour = discord.Color.dark_red()
+            )
+            error_embed.add_field(name = "Invalid command!", value = "There is no quiz going on.\nUse the command `.quiz` to start a quiz!")
+            await ctx.send(embed = error_embed)
             return
 
         elif(len(arg) > 1):
@@ -54,7 +61,12 @@ class Fun_Commands(commands.Cog):
                 await self.check_answer(ctx, arg[0].upper())
             else:
                 await self.display_error_message(ctx)
-                await ctx.send("```Try Again!```")
+                tryagain = discord.Embed(
+                    colour = discord.Color.dark_red()
+                )
+                tryagain.set_author(name = "Try again!")
+
+                await ctx.send(embed = tryagain)
                 await self.display_question(ctx)
                 return
 
@@ -62,13 +74,15 @@ class Fun_Commands(commands.Cog):
 
     # Starts quiz 
     async def start_quiz(self, ctx):
-        quiz_string = """ **Rules:**
-        - There are 5 questions and each question has 3 options (A, B and C)
-        - To answer with option A, use the command *.quiz A*
-        - To quit, use the command *.quiz quit*
-        """
-        await ctx.send(f'>>> {quiz_string}') 
-        await ctx.send("```Starting quiz..```")
+        description = "- There are 5 questions and each question has 3 options (A, B and C)\n"
+        description += "- To answer a question, use the command `.quiz <option>`\n"
+        description += "- To quit, use the command `.quiz quit`"
+        embed = discord.Embed(
+            colour = discord.Color.dark_red(),
+            title = "Quiz Instructions", 
+            description = description
+        )
+        await ctx.send(embed = embed) 
 
         await self.reset_variables()
         self.quiz_start = True
@@ -86,26 +100,42 @@ class Fun_Commands(commands.Cog):
         optionA = self.current_question['options'][0]
         optionB = self.current_question['options'][1]
         optionC = self.current_question['options'][2]
-        display_message = f"Question {num}: {question}\n{optionA}\n{optionB}\n{optionC}"
-        await ctx.send(f"```{display_message}```")
+        embed = discord.Embed(
+            colour = discord.Color.dark_red()
+        )
+        f1_logo = "https://i.ibb.co/QXL69Nq/logo.png"
+        embed.set_author(name = f"Question {num}", icon_url = f1_logo)
+        embed.add_field(name = question, value = f"{optionA}\n{optionB}\n{optionC}")
+        await ctx.send(embed = embed)
 
         # Doesn't show this question in the next round because it's already been displayed
         self.first_q = (self.first_q + 1) % self.data_size
 
     # Displays the points scored at the end of the quiz
     async def display_points(self, ctx):
-        message = f"```Congratulations! You have scored {self.points}/ 5```"
-        await ctx.send(message)
-        await self.end_quiz(ctx)
+        embed = discord.Embed(
+            colour = discord.Color.dark_red(),
+            title = f"You have scored {self.points} / 5 "
+        )
+        f1_logo = "https://i.ibb.co/QXL69Nq/logo.png"
+
+        embed.set_author(name = "Congratulations", icon_url = f1_logo)
+        await ctx.send(embed = embed)
+        await self.reset_variables()
     
     # Checks if the user's answer is correct
     async def check_answer(self, ctx, input):
         correct_answer = self.current_question['answer']
+        embed = discord.Embed(
+            colour = discord.Color.dark_red()
+        )
         if(input == correct_answer):
-            await ctx.reply("> **Correct Answer!**")
+            embed.set_author(name = "Correct Answer!")
+            await ctx.reply(embed = embed)
             self.points += 1
         else:
-            await ctx.reply(f">>> **Incorrect Answer!**\nThe correct answer was **{correct_answer}**")
+            embed.add_field(name = "Incorrect Answer!", value = f"The correct answer was: {correct_answer}")
+            await ctx.reply(embed = embed)
 
         await self.next_question(ctx)
         
@@ -121,16 +151,26 @@ class Fun_Commands(commands.Cog):
     
     # Ends the quiz and resets all quiz variables to default values
     async def end_quiz(self, ctx):
-        await ctx.send(f'```Quiz ended.```')
+        embed = discord.Embed(
+                    colour = discord.Color.dark_red()
+        )
+        embed.set_author(name = "Quiz Ended.")
+        await ctx.send(embed = embed)
         await self.reset_variables()
         
     # Error message for invalid command during quiz
     async def display_error_message(self, ctx):
-        error_message = """**Invalid command.** The valid quiz commands are:
-            - To start a quiz : *.quiz*
-            - To answer a question: *.quiz A* *(or B or C)*
-            - To quit : *.quiz quit*"""
-        await ctx.send(f">>> {error_message}")
+        error_embed = discord.Embed(
+                colour = discord.Color.dark_red()
+            )
+        error_message = "The valid quiz commands are:\n"
+        error_message += "- To start a quiz : `.quiz`\n"
+        error_message += "- To answer a question: `.quiz <option>` (a, b or c)\n"
+        error_message += "- To quit : `.quiz quit`"
+
+        error_embed.add_field(name = "Invalid command!", value = error_message)
+        await ctx.send(embed = error_embed)
+
 
     async def reset_variables(self):
         self.quiz_start = False
