@@ -35,13 +35,11 @@ async def latest_news(ctx, news_update_time, newslist):
 
     message = None
     if(len(newslist) == 0):
-        print("b")
         news_update_time = current_time + datetime.timedelta(hours = 2)
         message = await ctx.send("```Fetching latest F1 news...```")
         newslist = await update_list(ctx)
 
     if(current_time >= news_update_time):
-        print("a")
         news_update_time = current_time + datetime.timedelta(hours = 2)
         newslist.clear()
         message = await ctx.send("```Fetching latest F1 news...```")
