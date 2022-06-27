@@ -19,7 +19,7 @@ class Fun_Commands(commands.Cog):
         self.questions = []
         self.current_question = {}
 
-        with open("data\questions.json", "r") as f:
+        with open("data//questions.json", "r") as f:
             self.data = json.load(f)
 
         self.data_size = len(self.data)
