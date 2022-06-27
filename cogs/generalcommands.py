@@ -10,7 +10,7 @@ class General_Commands(commands.Cog):
     #Events
     @commands.Cog.listener()
     async def on_ready(self):
-        os.systen("pyppeteer-install")
+        os.system("pyppeteer-install")
         print("F1-Bot is ready!")
 
     #Commands
