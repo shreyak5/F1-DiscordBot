@@ -6,7 +6,7 @@ async def full_schedule(url):
     session = AsyncHTMLSession()
     r = await session.get(url)
     try:
-        await r.html.arender(sleep = 1)
+        await r.html.arender(sleep = 1, timeout = 8)
     except:
         return None
 
@@ -29,7 +29,7 @@ async def next_race():
 
     r = await session.get(main_page)
     try:
-        await r.html.arender(sleep = 1)
+        await r.html.arender(sleep = 1, timeout = 8)
     except:
         return None
 
