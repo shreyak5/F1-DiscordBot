@@ -8,7 +8,7 @@ async def full_schedule(url):
     try:
         await r.html.arender(sleep = 1)
     except:
-        await full_schedule(url)
+        return None
 
     schedule = []
     events = r.html.find(".f1-race-hub--timetable-listings > div")
@@ -31,7 +31,7 @@ async def next_race():
     try:
         await r.html.arender(sleep = 1)
     except:
-        await next_race()
+        return None
 
     race = ""
 
@@ -50,6 +50,9 @@ async def next_race():
     event_page = list(race.absolute_links)[0]
 
     schedule = await full_schedule(event_page)
+
+    if(schedule == None):
+        return None
 
     nextrace_embed = discord.Embed(
         colour = discord.Color.dark_red(),

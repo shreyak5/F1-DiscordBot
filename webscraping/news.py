@@ -9,7 +9,7 @@ async def update_list(ctx):
     try:
         await r.html.arender(sleep = 1, scrolldown = 0, timeout = 8)
     except:
-        await update_list(ctx)
+        return None
 
     articles = r.html.find("div div article")
     data =[]
@@ -40,7 +40,7 @@ async def latest_news(ctx, update_hour, newslist):
         message = await ctx.send("```Fetching latest F1 news...```")
         newslist = await update_list(ctx)
     
-    if(len(newslist) == 0):
+    elif(len(newslist) == 0):
         update_hour = (current_hour + 2) % 24
         message = await ctx.send("```Fetching latest F1 news...```")
         newslist = await update_list(ctx)

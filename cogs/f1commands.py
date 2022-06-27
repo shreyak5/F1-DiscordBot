@@ -33,7 +33,18 @@ class F1_Commands(commands.Cog):
     @commands.command(pass_context = True)
     async def news(self, ctx):
         self.update_hour, self.newslist, message = await news.latest_news(ctx, self.update_hour, self.newslist)
-        # make this random
+        
+        if(self.newslist == None):
+            embed = discord.Embed(
+                colour = discord.Color.dark_red()
+            )
+            embed.set_author(name = "Failed to fetch data, try again :(")
+            if(message == None):
+                await ctx.send(embed = embed)
+            else:
+                await message.edit(content = "", embed = embed)
+            return
+
         article = random.choice(self.newslist)
         self.newslist.remove(article)
 
@@ -53,7 +64,14 @@ class F1_Commands(commands.Cog):
     @commands.command(pass_context = True)
     async def nextrace(self, ctx):
         message = await ctx.send("```Fetching data...```")
-        await message.edit(content = "", embed = await upcoming.next_race())
+        embed = await upcoming.next_race()
+        if(embed == None):
+            embed = discord.Embed(
+                colour = discord.Color.dark_red()
+            )
+            embed.set_author(name = "Failed to fetch data, try again :(")
+        
+        await message.edit(content = "", embed = embed)
 
     @commands.command(pass_context = True)
     async def schedule(self, ctx):
