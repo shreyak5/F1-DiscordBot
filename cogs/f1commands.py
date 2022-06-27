@@ -64,7 +64,7 @@ class F1_Commands(commands.Cog):
         embed.set_author(name = "F1 2022 Upcoming Race Schedule", icon_url = f1_logo)
 
         display = []
-        with open("data\schedule.json", "r") as f:
+        with open("data//schedule.json", "r") as f:
             display = json.load(f)
         
         current_day = datetime.date.today().day
