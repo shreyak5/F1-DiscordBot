@@ -1,6 +1,5 @@
 .env
 images/
-commands.txt
-links.txt
+*.txt
 __pycache__
 test.py
