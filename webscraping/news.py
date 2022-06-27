@@ -34,7 +34,7 @@ async def latest_news(ctx, update_hour, newslist):
     current_hour = datetime.datetime.now().hour
 
     message = None
-    if(current_hour == update_hour):
+    if(current_hour >= update_hour):
         update_hour = (current_hour + 2) % 24
         newslist.clear()
         message = await ctx.send("```Fetching latest F1 news...```")
