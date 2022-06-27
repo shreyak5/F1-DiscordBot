@@ -4,3 +4,4 @@ discord.ext
 requests-html
 pandas
 table2ascii
+pyppeteer
