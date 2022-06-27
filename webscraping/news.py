@@ -36,11 +36,12 @@ async def latest_news(ctx, update_hour, newslist):
     message = None
     if(current_hour >= update_hour):
         update_hour = (current_hour + 2) % 24
-        newslist.clear()
+        if(newslist != None):
+            newslist.clear()
         message = await ctx.send("```Fetching latest F1 news...```")
         newslist = await update_list(ctx)
     
-    elif(len(newslist) == 0):
+    if((newslist == None) or (len(newslist) == 0)):
         update_hour = (current_hour + 2) % 24
         message = await ctx.send("```Fetching latest F1 news...```")
         newslist = await update_list(ctx)
