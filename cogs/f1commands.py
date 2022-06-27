@@ -14,8 +14,12 @@ class F1_Commands(commands.Cog):
         self.bot = bot
 
         # news variables
-        self.update_hour = (datetime.datetime.now().hour + 2) % 24
+        self.news_update_time = datetime.datetime.now() + datetime.timedelta(hours = 2)
         self.newslist = []
+
+        # next race command variables
+        self.nextrace_embed = None
+        self.reset_date = datetime.date.today()
 
     #Commands
     @commands.command(pass_context = True)
@@ -32,9 +36,9 @@ class F1_Commands(commands.Cog):
 
     @commands.command(pass_context = True)
     async def news(self, ctx):
-        self.update_hour, self.newslist, message = await news.latest_news(ctx, self.update_hour, self.newslist)
+        self.news_update_time, self.newslist, message = await news.latest_news(ctx, self.news_update_time, self.newslist)
         
-        if(self.newslist == None):
+        if(len(self.newslist) == 0):
             embed = discord.Embed(
                 colour = discord.Color.dark_red()
             )
@@ -63,15 +67,22 @@ class F1_Commands(commands.Cog):
 
     @commands.command(pass_context = True)
     async def nextrace(self, ctx):
-        message = await ctx.send("```Fetching data...```")
-        embed = await upcoming.next_race()
-        if(embed == None):
-            embed = discord.Embed(
-                colour = discord.Color.dark_red()
-            )
-            embed.set_author(name = "Failed to fetch data, try again :(")
-        
-        await message.edit(content = "", embed = embed)
+        if(datetime.date.today() >= self.reset_date):
+            self.nextrace_embed = None
+        if(self.nextrace_embed == None):
+            message = await ctx.send("```Fetching data...```")
+            embed = await upcoming.next_race()
+            self.nextrace_embed = embed
+            if(embed == None):
+                embed = discord.Embed(
+                    colour = discord.Color.dark_red()
+                )
+                embed.set_author(name = "Failed to fetch data, try again :(")
+            else:
+                self.reset_date = datetime.date.today() + datetime.timedelta(days = 1)
+            await message.edit(content = "", embed = embed)
+        else:
+            await ctx.send(embed = self.nextrace_embed)
 
     @commands.command(pass_context = True)
     async def schedule(self, ctx):
