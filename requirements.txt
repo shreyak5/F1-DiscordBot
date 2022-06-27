@@ -1,8 +1,6 @@
 discord
 python-dotenv
 discord.ext
-datetime
 requests-html
-bs4
 pandas
 table2ascii
