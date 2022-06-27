@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+import os
 
 class General_Commands(commands.Cog):
 
@@ -9,6 +10,7 @@ class General_Commands(commands.Cog):
     #Events
     @commands.Cog.listener()
     async def on_ready(self):
+        os.systen("pyppeteer-install")
         print("F1-Bot is ready!")
 
     #Commands
