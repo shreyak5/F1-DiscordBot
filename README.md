@@ -1,5 +1,11 @@
 # F1-Discord Bot
 
+A simple discord bot created using python and Discord API wrapper: *discord.py*. The bot displays information about the *2022 Formula 1* season such as, the driver and constructor standings, upcoming schedule, race wins, etc. It uses **webscraping techniques** to obtain the latest, up-to-date information.
+
+This project was created as a Core-Selection evaluation project for **Lambda - the Software Development Club of IITH**.
+
+The bot has been deployed using the free cloud service provider [Heroku.](https://www.heroku.com/)
+
 To add the bot to your server:
 [Click here!](https://discord.com/oauth2/authorize?client_id=988392963434508318&permissions=534723950656&scope=bot)
 
@@ -9,7 +15,7 @@ To add the bot to your server:
 * [requests-html](https://requests.readthedocs.io/projects/requests-html/en/latest/) - to webscrape data from static and dynamic webpages
 * [pandas](https://pandas.pydata.org/docs/) - to webscrape data in tables from webpages and handle the data
 * [table2ascii](https://table2ascii.readthedocs.io/en/latest/) - to make the tabular data pretty
-* [Beautiful soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) + [requests](https://requests.readthedocs.io/en/latest/) - were initially used to webscrape, then I switched to requests-html
+* [Beautiful soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) + [requests](https://requests.readthedocs.io/en/latest/) - initially used to webscrape, then I switched to requests-html
 
 ## Usage
 
@@ -47,6 +53,6 @@ To add the bot to your server:
 
 
 ----
-> *Note* : The commands which involve webscraping from dynamic websites (i.e `.nextrace`, `.news`), don't fetch the data when the bot is deployed on the server and run (due to limited free memory provided by the heroku server). 
+> *Note* : The commands which involve webscraping from dynamic websites (i.e `.nextrace` and `.news`), can't fetch the data when the bot is deployed on the server(due to limited free memory provided by heroku). 
 
-> However, the these features work perfectly fine when the bot is run locally.
+> However, these features work perfectly fine when the bot is run locally.
